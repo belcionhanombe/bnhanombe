@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belcio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+  /* Manter estilo original dos gráficos */
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: rgb(40, 44, 48);
+    padding: 15px 0;
+  }
+
+  .chart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pie-chart {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conic-gradient(#d4af37 calc(var(--percent) * 1%), #000 calc(var(--percent) * 1%));
+  }
+
+  .pie-chart::after {
+    content: attr(data-percent) "%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+
+  @media (max-width: 767px) {
+    /* Ajustes mobile mantendo layout original */
+    .chart-container {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .pie-chart {
+      width: 60px;
+      height: 60px;
+    }
+
+    .label {
+      font-size: 14px;
+    }
+
+    .text {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div id="SavanaPoint-page">
+      <a href="#" class="js-SavanaPoint-nav-toggle SavanaPoint-nav-toggle"><i></i></a>
+      <aside id="SavanaPoint-aside" role="complementary" class="js-fullheight">
+        <div>
+      <div id="SavanaPoint-logo" class="mb-4 mb-md-5" style="font-size: x-large; margin-bottom: 30px !important;">
+        <a href="index.html" style="background-image: url(images/bg.jpeg)">Bélcio Nhanombe</a> 
+        <span style="margin-top: 15px; font-size: medium; margin-left: 8px;"><i class="bi bi-geo-alt-fill"></i> Cidade de Maputo</span>
+      </div>
+        </div>
+        <nav id="SavanaPoint-main-menu" role="navigation">
+          <ul>
+            <li><a href="index.html" class="SavanaPoint-active active">Sobre mim</a></li>
+            <li><a href="educacao.html">Educação</a></li>
+            <li><a href="experiencia.html">Experiência</a></li>
+            <li><a href="contact.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <div class="SavanaPoint-footer">
+          <p class="pfooter">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script>
+            Todos os direitos reservados <br />
+            <a href="#">Bélcio Nhanombe</a>
+          </p>
+        </div>
+      </aside>
+
+      <div id="SavanaPoint-main">
+        <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+          <div class="container-fluid px-0">
+            <div class="row d-flex">
+<div class="col-md-6 d-flex position-relative">
+  <!-- Imagem de fundo -->
+  <div class="img d-flex align-self-stretch align-items-center js-fullheight w-100" 
+       style="background-image: url('images/bg.jpeg'); background-size: cover; position: relative;">
+    
+    <!-- Camada preta transparente -->
+    <div class="overlay w-100 h-100 d-flex justify-content-center align-items-center" 
+         style="position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.6);">
+      
+      <!-- Texto com animação de piscar -->
+      <h1 class="blinking-text" style="color: white; font-size: 2rem;">Bem-vindo!</h1>
+
+    </div>
+  </div>
+</div>
+
+<!-- Estilo CSS para piscar -->
+<style>
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .blinking-text {
+    animation: blink 3s infinite;
+  }
+</style>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="text px-4 pt-5 pt-md-0 px-md-4 pr-md-5 ftco-animate">
+                  <h2 class="mb-4">
+                    <span style="display: block;">Bélcio Nhanombe</span>
+                    <span style="color: white; font-size: medium; display: block; line-height: 1.2;">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; IT & Analista de Dados
+                    </span>
+                  </h2>
+                  <p style="text-align: justify;">
+                    Profissional de TI com mais de 4 anos de experiência em gestão de software, infraestrutura de TI, Suporte Técnico e Análise de Dados. Detém conhecimentos avançados em configuração e manutenção de redes LAN/WAN, administração de servidores Windows e Linux, Segurança Cibernética. Atua também no desenvolvimento de Sistemas.
+                  </p>
+                  <style>
+                    .chart-container {
+                      display: flex;
+                      justify-content: center;
+                      align-items: flex-start;
+                      gap: 40px;
+                    }
+
+                    .chart-item {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    }
+
+                    .pie-chart {
+                      position: relative;
+                      width: 70px;
+                      height: 70px;
+                      border-radius: 50%;
+                      background: conic-gradient(#d4af37 calc(var(--percent) * 1%), #000 calc(var(--percent) * 1%));
+                    }
+
+                    .pie-chart::after {
+                      content: attr(data-percent) "%";
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      font-size: 18px;
+                      font-weight: bold;
+                      color: white;
+                    }
+
+                    .label {
+                      margin-top: 10px;
+                      font-size: 16px;
+                      text-align: center;
+                    }
+                  </style>
+<div class="chart-container" style="background-color: rgb(40, 44, 48);">
+  <p style="color: aliceblue; margin-bottom: 15px;">Idiomas</p>
+  <div class="charts-wrapper">
+    <div class="chart-item">
+      <div class="pie-chart" style="--percent: 93;" data-percent="93"></div>
+      <div class="label">Português</div>
+    </div>
+    <div class="chart-item">
+      <div class="pie-chart" style="--percent: 83;" data-percent="83"></div>
+      <div class="label">Inglês</div>
+    </div>
+    <div class="chart-item">
+      <div class="pie-chart" style="--percent: 96;" data-percent="96"></div>
+      <div class="label">Changana/Ronga</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgb(40, 44, 48);
+    padding: 15px 0;
+  }
+
+  .charts-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  @media (max-width: 767px) {
+    .chart-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .charts-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .chart-container p {
+      order: -1;
+      margin-bottom: 10px;
+    }
+
+    .pie-chart {
+      width: 65px;
+      height: 65px;
+    }
+
+    .label {
+      font-size: 14px;
+    }
+  }
+</style>
+                    <br><br>
+                  <div class="SavanaPoint-footer" style="text-align: justify;">
+                    <div style="display: flex; justify-content:center; gap: 20px; margin-bottom: 10px;">
+                      <a href="mailto:belcionhanombe@gmail.com" style="text-decoration: none; color: inherit;">
+                        <i class="bi bi-envelope" style="font-size: 1.5rem; color: aliceblue;"></i>
+                      </a> &nbsp;&nbsp;
+                      <a href="tel:+258845678454" style="text-decoration: none; color: inherit;">
+                        <i class="bi bi-telephone" style="font-size: 1.5rem; color: aliceblue;"></i>
+                      </a> &nbsp;&nbsp;
+                      <a href="https://wa.me/258845678454" target="_blank" style="text-decoration: none; color: inherit;">
+                        <i class="bi bi-whatsapp" style="font-size: 1.5rem; color: aliceblue;"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
