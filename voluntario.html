@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voluntariado — Bélcio Nhanombe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <style>
+    .vol-hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(100, 180, 120, 0.4);
+      background: rgba(100, 180, 120, 0.08);
+      color: #7ecb95;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .org-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(100, 180, 120, 0.3);
+      background: rgba(100, 180, 120, 0.07);
+      color: #7ecb95;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .vol-resp-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .vol-resp-list li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      padding: 10px 0 10px 22px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      line-height: 1.5;
+    }
+
+    .vol-resp-list li:last-child {
+      border-bottom: none;
+    }
+
+    .vol-resp-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #7ecb95;
+      font-size: 0.8rem;
+      top: 11px;
+    }
+
+    .vol-quote {
+      background: rgba(100, 180, 120, 0.06);
+      border-left: 3px solid #7ecb95;
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .vol-org-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #7ecb95;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: opacity 0.2s;
+    }
+    .vol-org-link:hover { opacity: 0.75; }
+
+    .volunteer-card .card-header {
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="loader" id="loader"><div class="loader-ring"></div></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<aside id="sidebar">
+  <img src="images/bg.jpeg" alt="Bélcio" class="sidebar-photo" />
+  <div class="sidebar-name">Bélcio Nhanombe</div>
+  <div class="sidebar-role">IT & Analista de Dados</div>
+  <div class="sidebar-location"><i class="bi bi-geo-alt-fill"></i> Maputo, Moçambique</div>
+  <div class="sidebar-divider"></div>
+  <nav><ul id="nav-links"></ul></nav>
+  <div class="sidebar-contacts">
+    <a href="mailto:belcionhanombe@gmail.com"><i class="bi bi-envelope"></i></a>
+    <a href="tel:+258845678454"><i class="bi bi-telephone"></i></a>
+    <a href="https://wa.me/258845678454" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  </div>
+</aside>
+
+<div id="main">
+  <div class="page-hero">
+    <div class="page-label">Contribuição à comunidade</div>
+    <h1 class="page-title">Volunta<span>riado</span></h1>
+  </div>
+
+  <div class="content-area">
+
+    <div class="vol-quote">
+      Acredito que a tecnologia tem o poder de transformar comunidades. O voluntariado é a minha forma de retribuir e impulsionar o desenvolvimento digital em Moçambique.
+    </div>
+
+    <!-- AJUCOM -->
+    <div class="volunteer-card">
+      <div class="card-header">
+        <div style="flex:1">
+          <div class="org-badge"><i class="bi bi-people-fill"></i> AJUCOM</div>
+          <div class="card-title" style="font-size:1.2rem; margin-top:6px;">Director de Formações e Telecentro</div>
+          <div class="card-date" style="color:#7ecb95; font-size:0.8rem; margin-top:4px;">
+            <span style="color:#7ecb95">◦</span> Voluntário Activo
+          </div>
+          <a href="https://ajucom.vercel.app/" target="_blank" class="vol-org-link">
+            <i class="bi bi-box-arrow-up-right"></i> ajucom.vercel.app
+          </a>
+        </div>
+        <div style="padding:12px 16px; background:rgba(100,180,120,0.08); border:1px solid rgba(100,180,120,0.2); border-radius:12px; text-align:center; min-width:80px;">
+          <div style="font-size:1.8rem;">🏫</div>
+          <div style="font-size:0.68rem; color:#7ecb95; letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">Formação</div>
+        </div>
+      </div>
+
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px; line-height:1.7;">
+        Associação de Juventude Comunitária — organização que promove o desenvolvimento juvenil através da tecnologia, formação e cidadania activa em Moçambique.
+      </p>
+
+      <ul class="vol-resp-list">
+        <li>Planejar e coordenar as formações a nível da associação</li>
+        <li>Planejar e estruturar a digitalização da associação</li>
+        <li>Planejar e estruturar a rede interna da organização</li>
+      </ul>
+    </div>
+
+    <!-- Rádio Xinavane -->
+    <div class="volunteer-card">
+      <div class="card-header">
+        <div style="flex:1">
+          <div class="org-badge"><i class="bi bi-broadcast"></i> Rádio Comunitária de Xinavane</div>
+          <div class="card-title" style="font-size:1.2rem; margin-top:6px;">Membro Sénior</div>
+          <div class="card-date" style="color:#7ecb95; font-size:0.8rem; margin-top:4px;">
+            <span style="color:#7ecb95">◦</span> Voluntário Activo
+          </div>
+          <a href="http://rcxinavane.ajucom.org" target="_blank" class="vol-org-link">
+            <i class="bi bi-box-arrow-up-right"></i> rcxinavane.ajucom.org
+          </a>
+        </div>
+        <div style="padding:12px 16px; background:rgba(100,180,120,0.08); border:1px solid rgba(100,180,120,0.2); border-radius:12px; text-align:center; min-width:80px;">
+          <div style="font-size:1.8rem;">📻</div>
+          <div style="font-size:0.68rem; color:#7ecb95; letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">Rádio</div>
+        </div>
+      </div>
+
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px; line-height:1.7;">
+        Rádio Comunitária de Xinavane — meio de comunicação local ao serviço da comunidade, promovendo informação, cultura e cidadania.
+      </p>
+
+      <ul class="vol-resp-list">
+        <li>Auxiliar na coordenação das actividades da Rádio</li>
+        <li>Auxiliar na inovação e digitalização da Rádio</li>
+      </ul>
+    </div>
+
+    <!-- Impact section -->
+    <div style="margin-top: 40px; padding: 28px 32px; background: var(--dark-2); border: 1px solid var(--border); border-radius: 16px; display:flex; gap:32px; flex-wrap:wrap; align-items:center;">
+      <div style="flex:1; min-width:200px;">
+        <div style="font-family:'DM Serif Display',serif; font-size:1.3rem; color:var(--text); margin-bottom:6px;">Impacto na comunidade</div>
+        <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.7;">
+          Através do voluntariado, contribuo activamente para a capacitação digital de jovens e comunidades em Moçambique, acelerando a transformação digital a nível local.
+        </p>
+      </div>
+      <div style="display:flex; gap:24px; flex-wrap:wrap;">
+        <div style="text-align:center;">
+          <div style="font-family:'DM Serif Display',serif; font-size:2rem; color:#7ecb95;">2</div>
+          <div style="font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase;">Organizações</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'DM Serif Display',serif; font-size:2rem; color:#7ecb95;">🌍</div>
+          <div style="font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase;">Moçambique</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/portfolio.js"></script>
+<script>initSidebar('voluntario.html');</script>
+</body>
+</html>
